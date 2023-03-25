@@ -57,16 +57,19 @@ const checkConfirmPassword = (password, cpassword) => {
 
 const showPassword = () => {
     password.setAttribute('type', 'text');
-   
+    setTimeout(hidePassword, 500);
 }
+
+const showcPassword = () => {
+    cpassword.setAttribute('type', 'text');
+    setTimeout(hidecPassword, 500);
+}
+
 const hidePassword = () => {
     password.setAttribute('type', 'password');
    
 }
-const showcPassword = () => {
-    cpassword.setAttribute('type', 'text');
-   
-}
+
 const hidecPassword = () => {
     cpassword.setAttribute('type', 'password');
    
